@@ -20,6 +20,7 @@ body {
 footer {
   background-color: var(--info-background-color);
   height: 400px;
+  margin-top: 32px;
   position: relative;
 }
 
@@ -58,7 +59,7 @@ footer .btn {
 }
 
 section.section {
-  margin: 32px;
+  /* margin: 32px; */
 }
 
 .container {
@@ -73,6 +74,7 @@ section.section .title {
   line-height: 64px;
   letter-spacing: 0%;
   margin-bottom: 32px;
+  margin-left: 32px;
 }
 
 section.section .subtitle {
@@ -81,6 +83,11 @@ section.section .subtitle {
   font-size: 28px;
   line-height: 34px;
   margin-bottom: 20px;
+}
+
+section.section .subtitle .subtitle__caption {
+  color: var(--section-title);
+  font-weight: 300;
 }
 
 section.img-separator img {
@@ -141,6 +148,10 @@ section.section-info .info-content {
   line-height: 48px;
 }
 
+.mt-32 {
+  margin-top: 32px;
+}
+
 .included li {
   text-align: left;
   font-weight: 300;
@@ -174,6 +185,22 @@ section.section-info .info-content {
 .splide__track {
   text-align: center;
 }
+
+section.section .content .content-section {
+  display: flex;
+}
+
+section.section .content .content-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+section.section .content .content-section .content-section__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 32px;
+}
+
 
 @media only screen and (max-device-width : 1920px) {
 }
