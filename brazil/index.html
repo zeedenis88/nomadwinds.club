@@ -10,7 +10,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Shadow&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+
         <link rel="stylesheet" type="text/css" href="brazil.css">
     </head>
     <body>
@@ -395,39 +396,41 @@
             <div class="title">
                 memories from last trip
             </div>
-            <div class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="https://ucarecdn.com/50cdafe9-d82d-4eae-83e2-5d8838fa0308/-/scale_crop/800x450/center">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="https://ucarecdn.com/db8a8566-4c44-4d85-b6a4-8ca29dcd4fe3/-/scale_crop/800x450/center/">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="https://ucarecdn.com/d9d7ee81-b410-428a-a2d0-743e3366d1a8/-/scale_crop/800x450/center/">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="https://ucarecdn.com/50cdafe9-d82d-4eae-83e2-5d8838fa0308/-/scale_crop/800x450/center">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="https://ucarecdn.com/db8a8566-4c44-4d85-b6a4-8ca29dcd4fe3/-/scale_crop/800x450/center/">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="https://ucarecdn.com/d9d7ee81-b410-428a-a2d0-743e3366d1a8/-/scale_crop/800x450/center/">
 
-                        </li>
-                    </ul>
+                    </li>
+                  </ul>
                 </div>
-            </div>
+              </div>
         </section>
 
         <footer>
             <a href="#" class="btn"><span>get in touch</span></a>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        
         <script>
-            new Splide('.splide', {
-                arrows: false,
-                autoplay: true,
-                gap: '10px',
-                height: 450,
-                pagination: false,
-                perPage: 1.4,
-                focus: 'center',
-                type: 'loop',
-            }).mount();
+          new Glide('.glide', {
+            autoplay: 3000,
+            hoverpause: true,
+            peek: { 
+              before: 150,      // Show 50px of the previous slide
+              after: 150        // Show 50px of the next slide
+            },
+            focusAt: 'center', // Centers the current slide
+            gap: 32,           // Space between slides (adjust if needed)
+            type: 'carousel',
+          }).mount()
         </script>
     </body>
 </html>
