@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // image gallery
   var elms = document.getElementsByClassName( 'splide' );
   for ( var i = 0; i < elms.length; i++ ) {
-    console.log(elms[i])
     new Splide( elms[ i ] ).mount();
   }
 });

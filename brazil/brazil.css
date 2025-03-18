@@ -17,6 +17,17 @@ body {
   max-width: 1920px;
 }
 
+footer {
+  background-color: var(--info-background-color);
+  height: 400px;
+  position: relative;
+}
+
+footer .btn {
+  bottom: initial;
+  top: 32px;
+}
+
 .head {
   position: relative;
 }
@@ -61,7 +72,7 @@ section.section .title {
   font-size: 60px;
   line-height: 64px;
   letter-spacing: 0%;
-  
+  margin-bottom: 32px;
 }
 
 section.section .subtitle {
@@ -89,9 +100,17 @@ section.section-info .info-content {
   display: flex;
   margin: 0 32px;
   text-align: center;
+}
+
+.img-separator + section.section-info .info-content {
   position: relative;
   top: -24px;
 }
+
+.img-separator + section.section-info .btn {
+  bottom: -16px;
+}
+
 
 .info-content .info-content__info {
   margin: 48px 0;
@@ -133,7 +152,7 @@ section.section-info .info-content {
   background-color: #DBAD6A;
   border: 2px solid var(--info-background-color);
   border-radius: 120px;
-  bottom: -16px;
+  bottom: -38px;
   left:0;
   margin: auto;
   padding: 0 32px;
@@ -150,6 +169,10 @@ section.section-info .info-content {
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
+}
+
+.splide__track {
+  text-align: center;
 }
 
 @media only screen and (max-device-width : 1920px) {
