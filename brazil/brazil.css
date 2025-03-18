@@ -278,7 +278,7 @@ section.section .content--bis .content-section .content-section__img img {
   object-fit: cover;
 }
 
-@media only screen and (max-device-width : 1024px) {
+@media only screen and (max-device-width : 1023px) {
   .head .title {
     padding-left: 10%;
     padding-top: 5%;
@@ -340,7 +340,7 @@ section.section .content--bis .content-section .content-section__img img {
   }
 }
 
-@media only screen and (max-device-width : 768px) {
+@media only screen and (max-device-width : 767px) {
   section.section-info .info-content {
     flex-direction: column;
   }
