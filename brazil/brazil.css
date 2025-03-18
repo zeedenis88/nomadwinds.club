@@ -1,5 +1,5 @@
 :root {
-  --background-color: ##E7E8E2;
+  --background-color: #E7E8E2;
   --titles-color: #1A5E66;
   --section-title: #C95D63;
   --info-background-color: #13474C;
@@ -13,7 +13,8 @@ body {
   font-weight: 300;
   letter-spacing: 0%;
   line-height: 24px;
-  margin: 0;
+  margin: auto;
+  max-width: 1920px;
 }
 
 .head {
@@ -46,7 +47,7 @@ body {
 }
 
 section.section {
-  margin: 32px 0;
+  margin: 32px;
 }
 
 .container {
@@ -55,6 +56,15 @@ section.section {
 }
 
 section.section .title {
+  font-family: Londrina Shadow;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: 0%;
+  
+}
+
+section.section .subtitle {
   color: var(--section-title);
   font-weight: 700;
   font-size: 28px;
@@ -67,9 +77,14 @@ section.img-separator img {
   width: 100%;
 }
 
+section.section-info {
+  position: relative;
+}
+
 section.section-info .info-content {
   justify-content: space-around;
   background-color: var(--info-background-color);
+  border-radius: 8px;
   color: var(--info-background-text-color);
   display: flex;
   margin: 0 32px;
@@ -105,6 +120,36 @@ section.section-info .info-content {
   font-weight: 400;
   font-size: 28px;
   line-height: 48px;
+}
+
+.included li {
+  text-align: left;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn {
+  background-color: #DBAD6A;
+  border: 2px solid var(--info-background-color);
+  border-radius: 120px;
+  bottom: -16px;
+  left:0;
+  margin: auto;
+  padding: 0 32px;
+  position: absolute;
+  right:0;
+  width: fit-content;
+}
+
+.btn span {
+  color: var(--titles-color);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
 }
 
 @media only screen and (max-device-width : 1920px) {
