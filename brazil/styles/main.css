@@ -157,6 +157,9 @@ section.section-info .info-content {
   font-weight: 400;
   font-size: 28px;
   line-height: 48px;
+}
+
+.info-content .info-content__info__text ul {
   margin-right: 20px;
 }
 
