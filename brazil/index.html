@@ -18,14 +18,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Shadow&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="./styles/glide.min.css">
 
-        <link rel="stylesheet" type="text/css" href="../reset.css">
-        <link rel="stylesheet" type="text/css" href="./brazil.css">
+        <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="./styles/main.css">
     </head>
     <body>
         <div class="head">
-            <img src="images/header.jpeg">
+            <img src="./images/header.jpeg">
             <div class="title">
                 <h1 class="title__main">
                     Brazil
@@ -61,7 +61,7 @@
         </section>
 
         <section class="img-separator">
-            <img src="images/separator.jpeg">
+            <img src="./images/separator.jpeg">
         </section>
 
         <section class="section-info">
@@ -123,7 +123,7 @@
                             choppy ocean conditions, and waves.
                             <br><br>
                             Day trip
-                            <ul>
+                            <ul class="daytrip">
                                 <li>
                                     Taiba - a spot that has become famous in the world of kitesurfing. A spot where you’ll be kiting alongside some of the best freestyle kitesurfers in the world.
                                 </li>
@@ -151,7 +151,7 @@
                             It’s a perfect playground for progress and one of our favourite spots.
                             <br><br>
                             Day trip
-                            <ul>
+                            <ul class="daytrip">
                                 <li>
                                     trip to Parnaiba - boat trip to discover the mangrove forest, dunes, kite alone in the river and eat fresh crabs straight from the river. That's an experience.
                                 </li>
@@ -180,7 +180,7 @@
                             The small but strong community creates a unique atmosphere, and there’s always something going on.
                             <br><br>
                             Day trip
-                            <ul>
+                            <ul class="daytrip">
                                 <li>
                                     Downwind Prea-Tatajuba - imagine strong wind, a mixture of flat areas and waves, stunning remote landscape and only you and your friends on the water cruising through
                                 </li>
@@ -312,7 +312,7 @@
                     <div class="content-section__img">
                         <img src="https://ucarecdn.com/50cdafe9-d82d-4eae-83e2-5d8838fa0308/-/scale_crop/512x420/center">
                     </div>
-                    <div class="content-section__text">
+                    <div class="content-section__text mb-0">
                         <h3 class="subtitle">
                             Transportation
                         </h3>
@@ -404,14 +404,20 @@
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
                     <li class="glide__slide">
-                        <img src="https://ucarecdn.com/50cdafe9-d82d-4eae-83e2-5d8838fa0308/-/scale_crop/800x450/center">
+                        <a data-fslightbox href="https://ucarecdn.com/50cdafe9-d82d-4eae-83e2-5d8838fa0308/-/scale_crop/800x450/center">
+                            <img src="https://ucarecdn.com/50cdafe9-d82d-4eae-83e2-5d8838fa0308/-/scale_crop/800x450/center" alt="Image">
+                        </a>
+                        <img src="">
                     </li>
                     <li class="glide__slide">
-                        <img src="https://ucarecdn.com/db8a8566-4c44-4d85-b6a4-8ca29dcd4fe3/-/scale_crop/800x450/center/">
+                        <a data-fslightbox href="https://ucarecdn.com/50cdafe9-d82d-4eae-83e2-5d8838fa0308/-/scale_crop/800x450/center">
+                            <img src="https://ucarecdn.com/50cdafe9-d82d-4eae-83e2-5d8838fa0308/-/scale_crop/800x450/center" alt="Image">
+                        </a>
                     </li>
                     <li class="glide__slide">
-                        <img src="https://ucarecdn.com/d9d7ee81-b410-428a-a2d0-743e3366d1a8/-/scale_crop/800x450/center/">
-
+                        <a data-fslightbox href="https://ucarecdn.com/d9d7ee81-b410-428a-a2d0-743e3366d1a8/-/scale_crop/800x450/center/">
+                            <img src="https://ucarecdn.com/d9d7ee81-b410-428a-a2d0-743e3366d1a8/-/scale_crop/800x450/center/" alt="Image">
+                        </a>
                     </li>
                   </ul>
                 </div>
@@ -421,7 +427,9 @@
         <footer>
             <a href="https://forms.zohopublic.com/technomad1/form/NomadWindsletsgetintouch/formperma/QHu-av-K4NOxag_wZ2CX3Y_y7di-mNwiS5E6VMwqm3g" target="_blank" class="btn"><span>get in touch</span></a>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-        <script src="./brazil.js"></script>
+
+        <script src="./scripts/glide.min.js"></script>
+        <script src="./scripts/fslightbox.min.js"></script>
+        <script src="./scripts/main.js"></script>
     </body>
 </html>
