@@ -2,8 +2,8 @@ new Glide('.glide', {
   autoplay: 3000,
   hoverpause: true,
   peek: { 
-    before: 150,
-    after: 150
+    before: 50,
+    after: 50
   },
   focusAt: 'center',
   gap: 32,
