@@ -85,6 +85,7 @@ section.section .title {
   letter-spacing: 0%;
   margin-bottom: 32px;
   margin-left: 32px;
+  color: var(--info-background-color);
 }
 
 section.section .subtitle {
@@ -198,6 +199,7 @@ section.section-info .info-content.included {
   right:0;
   text-align: center;
   width: 156px;
+  text-decoration: none;
 }
 
 .btn span {
@@ -206,8 +208,6 @@ section.section-info .info-content.included {
   font-weight: 700;
   line-height: 80px;
   text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
 }
 
 section.section .content .content-section {
@@ -360,9 +360,9 @@ ul.daytrip {
   }
 
   section.section-info .info-content .info-content__info {
-    padding: 0;
+    margin: 0;
     border: none;
-    margin: 24px 0;
+    padding: 24px 0;
   }
 
   section.section-info .info-content .info-content__info:last-of-type {
@@ -372,7 +372,7 @@ ul.daytrip {
 
 @media only screen and (max-device-width : 767px) {
   .container {
-    margin: 0 32px;
+    margin: 0 16px;
     width: auto;
   }
 
@@ -392,5 +392,9 @@ ul.daytrip {
     font-size: 20px;
     line-height: 28px;
     width: 230px;
+  }
+
+  section.section-info .info-content .info-content__info:not(:last-of-type) {
+    border-bottom: solid 2px var(--grey-color);
   }
 }
