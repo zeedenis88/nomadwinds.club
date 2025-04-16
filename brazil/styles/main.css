@@ -290,7 +290,7 @@ ul.daytrip {
   margin: 0;
 }
 
-@media only screen and (max-device-width : 1279px) {
+@media only screen and (max-width : 1279px) {
   .head .title {
     padding-left: 64px;
     padding-top: 128px;
@@ -351,7 +351,7 @@ ul.daytrip {
   }
 }
 
-@media only screen and (max-device-width : 1023px) {
+@media only screen and (max-width : 1023px) {
   .head .title {
     padding-left: 48px;
     padding-top: 44px;
@@ -373,7 +373,7 @@ ul.daytrip {
   }
 }
 
-@media only screen and (max-device-width : 767px) {
+@media only screen and (max-width : 767px) {
   .container {
     margin: 0 16px;
     width: auto;
