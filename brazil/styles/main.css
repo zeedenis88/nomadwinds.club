@@ -183,6 +183,14 @@ section.section-info .info-content.included {
   margin-bottom: 64px;
 }
 
+.included .info-content__info {
+  margin-bottom: 58px;
+}
+
+.included ul {
+  margin-bottom: 10px;
+}
+
 .included li {
   text-align: left;
   font-weight: 300;
@@ -254,19 +262,7 @@ section.section .content .content-section .content-section__text {
   margin: 32px;
   flex-shrink: 0;
   justify-content: flex-end;
-}
-
-section.section .content--bis .content-section .content-section__text {
-  justify-content: center;
-}
-
-section.section .content--bis .content-section:nth-child(even) .content-section__text {
-  display: flex;
-  align-items: flex-end;
-}
-
-section.section .content--bis .content-section .content-section__text span {
-  width: 400px;
+  width: auto;
 }
 
 section.section .content .content-section .content-section__text div:last-of-type {
@@ -277,21 +273,11 @@ section.section .content .content-section .content-section__img {
   flex: 1;
 }
 
-section.section .content--bis .content-section .content-section__img {
-  text-align: center;
-}
 
 section.section .content .content-section .content-section__img img {
   height: 100%;
   object-fit: cover;
   width: 100%;
-}
-
-section.section .content--bis .content-section .content-section__img img {
-  border-radius: 50%;
-  height: 320px;
-  margin-top: -32px;
-  width: 320px;
 }
 
 .glide {
@@ -313,6 +299,37 @@ section.section .content--bis .content-section .content-section__img img {
 
 ul.daytrip {
   margin: 0;
+}
+
+.aboutus-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-height: 200px;
+}
+
+.aboutus-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.aboutus-section .aboutus-section__img {
+  flex: 1;
+  text-align: center;
+  z-index: 1;
+}
+
+.aboutus-section .aboutus-section__img img {
+  border-radius: 50%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 16px;
+  max-width: calc(100% - 32px);
+  display: block;
+}
+
+.aboutus-section .aboutus-section__text {
+  width: 400px;
+  flex-shrink: 0;
 }
 
 @media only screen and (max-width : 1279px) {
@@ -355,22 +372,6 @@ ul.daytrip {
     margin: 32px;
   }
 
-  section.section .content--bis .content-section .content-section__img img {
-    width: 200px;
-    height: 200px;
-    margin: 32px;
-  }
-
-  section.section .content--bis .content-section .content-section__text {
-    width: calc(100% - 64px);
-    margin: 0;
-  }
-
-  section.section .content--bis .content-section .content-section__text span {
-    align-self: center;
-    width: 100%;
-  }
-
   .pt-164 {
     padding: 0;
   }
@@ -404,6 +405,19 @@ ul.daytrip {
 
   section.section-info .info-content .info-content__info:last-of-type {
     margin-bottom: 48px;
+  }
+
+  .aboutus-section, .aboutus-section:nth-child(even) {
+    flex-direction: column;
+    max-height: fit-content;
+  }
+
+  .aboutus {
+    margin: 32px 0;
+  }
+
+  .aboutus-section__text {
+    margin: 16px 0;
   }
 }
 
