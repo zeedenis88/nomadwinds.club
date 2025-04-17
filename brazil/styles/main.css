@@ -396,7 +396,7 @@ ul.daytrip {
   }
 
   section.section-info .info-content:not(.included) .info-content__info {
-    height: 274px;
+    height: 174px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,6 +418,26 @@ ul.daytrip {
 
   .aboutus-section__text {
     margin: 16px 0;
+  }
+
+  .info-content .info-content__info__title {
+    font-size: 28px;
+  }
+  
+  .info-content .info-content__info__text {
+    font-size: 16px;
+  }
+  
+  .btn span {
+    font-size: 22px;
+  }
+
+  section.section .title {
+    font-size: 40px;
+  }
+
+  section.section-info .info-content .info-content__info:not(:last-of-type) {
+    border-bottom: solid 2px var(--grey-color);
   }
 }
 
@@ -443,9 +463,5 @@ ul.daytrip {
     font-size: 20px;
     line-height: 28px;
     width: 230px;
-  }
-
-  section.section-info .info-content .info-content__info:not(:last-of-type) {
-    border-bottom: solid 2px var(--grey-color);
   }
 }
