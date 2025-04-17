@@ -218,6 +218,31 @@ section.section .content .content-section {
   width: 100%;
 }
 
+.content-section.content-section--bg-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.content-section.content-section--bg-img .content-section__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/separator.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: 0;
+}
+
+.content-section.content-section--bg-img .content-section__text {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  backdrop-filter: brightness(0.7); /* optional: slightly darken the background under the text */
+}
+
 section.section .content .content-section:nth-child(even) {
   flex-direction: row-reverse;
 }
@@ -228,7 +253,7 @@ section.section .content .content-section .content-section__text {
   flex-direction: column;
   margin: 32px;
   flex-shrink: 0;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 section.section .content--bis .content-section .content-section__text {
@@ -363,9 +388,18 @@ ul.daytrip {
   }
 
   section.section-info .info-content .info-content__info {
-    margin: 0;
+    margin: 0 24px;
     border: none;
     padding: 24px 0;
+    width: auto;
+  }
+
+  section.section-info .info-content:not(.included) .info-content__info {
+    height: 274px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   section.section-info .info-content .info-content__info:last-of-type {

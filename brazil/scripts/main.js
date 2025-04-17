@@ -8,4 +8,11 @@ new Glide('.glide', {
   focusAt: 'center',
   gap: 32,
   type: 'carousel',
+  perView: 2,
+  breakpoints: {
+    767: {
+      gap: 10,
+      perView: 0.9 
+    }
+  }
 }).mount()
