@@ -8,6 +8,7 @@ for (let i = 1; i <= totalImages; i++) {
   const a = document.createElement('a');
   a.href = `./images/gallery/${i}.webp`;
   a.setAttribute('data-fslightbox', '');
+  a.setAttribute('data-type', 'image');
 
   const img = document.createElement('img');
   img.src = `./images/gallery/${i}.webp`;
