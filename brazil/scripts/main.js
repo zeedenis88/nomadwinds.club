@@ -1,4 +1,4 @@
-const slideContainer = document.querySelector('.glide__slides');
+const slideContainer = document.querySelector('.glide.gallery .glide__slides');
 const totalImages = 21;
 
 for (let i = 1; i <= totalImages; i++) {
@@ -19,7 +19,7 @@ for (let i = 1; i <= totalImages; i++) {
   slideContainer.appendChild(li);
 }
 
-new Glide('.glide', {
+new Glide('.glide.gallery', {
   autoplay: 3000,
   hoverpause: true,
   peek: { 
@@ -36,4 +36,16 @@ new Glide('.glide', {
       perView: 0.9 
     }
   }
-}).mount()
+}).mount();
+
+const glides = document.querySelectorAll('.content-section__img--gallery .glide');
+glides.forEach(glide => {
+  new Glide(glide, {
+    autoplay: 3000,
+    hoverpause: true,
+    focusAt: 'center',
+    gap: 0,
+    type: 'carousel',
+    perView: 1,
+  }).mount();
+})
