@@ -490,6 +490,16 @@ ul.daytrip {
   section.section-info .info-content .info-content__info:not(:last-of-type) {
     border-bottom: solid 2px var(--grey-color);
   }
+
+  section.section .content .content-section .content-section__img.content-section__img--gallery {
+    width: 100%;
+  }
+
+  section.img-separator .img-separator__text {
+    width: 80%;
+    margin: calc(10% - 16px);
+  }
+
 }
 
 @media only screen and (max-width : 767px) {
@@ -522,10 +532,12 @@ ul.daytrip {
   }
 
   section.img-separator .img-separator__text {
-    top: 162px;
+    height: fit-content;
+    top: 190px;
     margin: 12px;
     font-size: 16px;
     line-height: 22px;
+    width: calc(100% - 32px);
   }
 
   .aboutus {
