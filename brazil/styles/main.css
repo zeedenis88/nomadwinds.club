@@ -256,7 +256,6 @@ section.section .content .content-section:nth-child(even) {
 }
 
 section.section .content .content-section .content-section__text {
-  width: calc(50% + 112px);
   display: flex;
   flex-direction: column;
   margin: 32px;
@@ -270,7 +269,7 @@ section.section .content .content-section .content-section__text div:last-of-typ
 }
 
 section.section .content .content-section .content-section__img {
-  flex: 1;
+  width: 588px;
 }
 
 
@@ -348,13 +347,8 @@ ul.daytrip {
     line-height: 40px;
   }
 
-  section.section .content .content-section,
-  section.section .content .content-section:nth-child(even) {
-    flex-direction: column;
-  }
-
-  section.section .content .content-section .content-section__img img {
-    height: 300px;
+  section.section .content .content-section .content-section__img {
+    width: 100%;
   }
 
   section.section .content .content-section .content-section__text {
@@ -386,6 +380,16 @@ ul.daytrip {
 
   section.section-info .info-content {
     flex-direction: column;
+  }
+
+
+  section.section .content .content-section,
+  section.section .content .content-section:nth-child(even) {
+    flex-direction: column;
+  }
+
+  section.section .content .content-section .content-section__img img {
+    height: 300px;
   }
 
   section.section-info .info-content .info-content__info {
