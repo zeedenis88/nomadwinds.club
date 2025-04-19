@@ -41,7 +41,7 @@ new Glide('.glide.gallery', {
 const glides = document.querySelectorAll('.content-section__img--gallery .glide');
 glides.forEach(glide => {
   new Glide(glide, {
-    // autoplay: 3000,
+    autoplay: 3000,
     hoverpause: true,
     focusAt: 'center',
     gap: 0,
