@@ -150,7 +150,7 @@ section.section-info .info-content {
 }
 
 .img-separator + section.section-info .btn {
-  bottom: -16px;
+  bottom: -8px;
 }
 
 
@@ -233,7 +233,7 @@ section.section-info .info-content.included {
   position: absolute;
   right:0;
   text-align: center;
-  width: 156px;
+  width: fit-content;
   text-decoration: none;
 }
 
@@ -241,7 +241,7 @@ section.section-info .info-content.included {
   color: var(--info-background-color);
   font-size: 28px;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 60px;
   text-align: center;
 }
 
