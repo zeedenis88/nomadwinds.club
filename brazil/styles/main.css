@@ -88,6 +88,10 @@ section.section .title {
   color: var(--info-background-color);
 }
 
+section:last-of-type.section .title {
+  line-height: 48px;
+}
+
 section.section .subtitle {
   color: var(--section-title);
   font-weight: 700;
@@ -452,7 +456,7 @@ ul.daytrip {
   }
 
   .aboutus-section .aboutus-section__text {
-    margin: 16px;
+    margin: 32px;
     width: auto;
   }
 
@@ -523,6 +527,9 @@ ul.daytrip {
 
   .info-content .info-content__info__text {
     line-height: 24px;
+  }
+
+  .info-content:not(.included) .info-content__info__text {
     width: 190px;
   }
 
