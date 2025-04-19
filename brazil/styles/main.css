@@ -101,9 +101,23 @@ section.section .subtitle .subtitle__caption {
   font-weight: 300;
 }
 
+section.img-separator {
+  position: relative;
+}
+
 section.img-separator img {
   display: block;
   width: 100%;
+}
+
+section.img-separator .img-separator__text {
+  position: absolute;
+  bottom: -100px;
+  border-radius: 8px;
+  margin-left: calc((100% - 432px) / 2);
+  margin-right: 22%;
+  background-color: rgba(231, 232, 226, 0.5);
+  padding: 16px;
 }
 
 section.section-info {
@@ -214,7 +228,7 @@ section.section-info .info-content.included {
 }
 
 .btn span {
-  color: var(--titles-color);
+  color: var(--info-background-color);
   font-size: 28px;
   font-weight: 700;
   line-height: 80px;
@@ -300,6 +314,11 @@ ul.daytrip {
   margin: 0;
 }
 
+.aboutus {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
 .aboutus-section {
   display: flex;
   align-items: center;
@@ -315,6 +334,12 @@ ul.daytrip {
   flex: 1;
   text-align: center;
   z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aboutus-section:nth-child(even) .aboutus-section__img {
+  justify-content: flex-start;
 }
 
 .aboutus-section .aboutus-section__img img {
@@ -420,8 +445,9 @@ ul.daytrip {
     margin: 32px 0;
   }
 
-  .aboutus-section__text {
-    margin: 16px 0;
+  .aboutus-section .aboutus-section__text {
+    margin: 16px;
+    width: auto;
   }
 
   .info-content .info-content__info__title {
@@ -467,5 +493,38 @@ ul.daytrip {
     font-size: 20px;
     line-height: 28px;
     width: 230px;
+  }
+
+  section.img-separator img {
+    object-fit: cover;
+    height: 300px;
+  }
+
+  section.img-separator .img-separator__text {
+    top: 162px;
+    margin: 12px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .aboutus {
+    margin-top: 50px;
+  }
+
+  .info-content .info-content__info__title {
+    margin-bottom: 0;
+  }
+
+  .info-content .info-content__info__text {
+    line-height: 24px;
+    width: 190px;
+  }
+
+  section.section-info .info-content .info-content__info:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  section.section-info .info-content:not(.included) .info-content__info {
+    height: 130px;
   }
 }
