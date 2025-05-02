@@ -23,11 +23,14 @@ footer {
   height: 400px;
   margin-top: 32px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 footer .btn {
   bottom: initial;
   top: 32px;
+  position: relative;
 }
 
 .head {
@@ -367,7 +370,10 @@ ul.daytrip {
 
 .aboutus-section .aboutus-section__text {
   width: 400px;
-  flex-shrink: 0;
+}
+
+.instagram-link {
+  margin: auto;
 }
 
 @media only screen and (max-width : 1279px) {
