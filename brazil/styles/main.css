@@ -286,7 +286,6 @@ section.section .content .content-section .content-section__text {
   display: flex;
   flex-direction: column;
   margin: 32px;
-  flex-shrink: 0;
   justify-content: flex-end;
   width: auto;
 }
