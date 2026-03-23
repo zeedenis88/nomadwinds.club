@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,458 +14,404 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Shadow&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/glide.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Londrina+Shadow&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" type="text/css" href="./styles/reset.css">
-        <link rel="stylesheet" type="text/css" href="./styles/main.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            sage: '#E7E8E2',
+                            teal: { deep: '#13474C', DEFAULT: '#1A5E66' },
+                            coral: '#C95D63',
+                            sand: '#DBAD6A',
+                            mist: '#D6D9CE',
+                        },
+                        fontFamily: {
+                            sans: ['Kanit', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                            display: ['"Londrina Shadow"', 'cursive'],
+                        },
+                        boxShadow: {
+                            soft: '0 25px 50px -12px rgba(19, 71, 76, 0.15)',
+                        },
+                    },
+                },
+            };
+        </script>
+
+        <link rel="stylesheet" href="./styles/glide.min.css">
+        <link rel="stylesheet" href="./styles/brazil-glide.css">
+        <style>
+            @keyframes hero-in {
+                from { opacity: 0; transform: translateY(16px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-hero-in {
+                animation: hero-in 0.9s ease-out both;
+            }
+        </style>
     </head>
-    <body>
-        <div class="head">
-            <img src="./images/header.webp">
-            <div class="title">
-                <h1 class="title__main">
-                    Brazil
-                    <br>
-                    Kite & work
-                </h1>
-                <div class="title__sub">
-                    a 4-week slow travel adventure for kitesurfing digital nomads.
+    <body class="bg-sage font-sans font-light text-teal-deep antialiased max-w-[1920px] mx-auto text-base leading-relaxed selection:bg-sand/40 selection:text-teal-deep">
+
+        <!-- Hero -->
+        <header class="relative overflow-hidden">
+            <img src="./images/header.webp" alt="Kitesurfing on the Brazilian coast" class="block w-full h-[300px] sm:h-auto sm:min-h-[320px] object-cover object-left sm:object-center">
+            <div class="absolute inset-0 bg-gradient-to-r from-sage/95 via-sage/40 to-transparent sm:from-sage/90 sm:via-sage/25 pointer-events-none" aria-hidden="true"></div>
+            <div class="absolute inset-0 flex items-end sm:items-center pb-8 sm:pb-0 pl-4 sm:pl-12 lg:pl-20 pt-12 sm:pt-0">
+                <div class="max-w-xl animate-hero-in">
+                    <h1 class="font-semibold text-teal text-4xl sm:text-5xl lg:text-7xl xl:text-8xl leading-[1.05] tracking-tight">
+                        Brazil
+                        <br>
+                        <span class="text-teal-deep">Kite & work</span>
+                    </h1>
+                    <p class="mt-3 sm:mt-5 text-lg sm:text-2xl lg:text-3xl font-normal text-teal-deep/90 max-w-[16rem] sm:max-w-none leading-snug">
+                        a 4-week slow travel adventure for kitesurfing digital nomads.
+                    </p>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <section class="section section--full-margin">
-            <div class="container">
-                <h3 class="subtitle">
+        <!-- Intro -->
+        <section class="py-14 sm:py-20 px-4 sm:px-6">
+            <div class="max-w-2xl mx-auto">
+                <h3 class="text-coral font-bold text-xl sm:text-2xl leading-snug mb-6">
                     The trip has been carefully designed for digital nomads and remote workers.
                 </h3>
-                It’s a perfect balance between communal activities and personal time,
-                allowing for a slow-paced exploration of Brazil’s breathtaking coastline—home to some 
-                of the best kitesurfing conditions in the world.
-                <br><br>
-                With steady winds blowing from morning to sunset at 20–35 knots and warm waters above 26°C,
-                the conditions are ideal for all levels. Along the way, we’ll experience a mix of open ocean and flat-water lagoons, 
-                remote hideaways, and vibrant social hubs. Over four weeks, we’ll stay in three different locations, explore many more, 
-                and conclude our adventure in the legendary town of Jericoacoara.
-                <br><br>
-                Nomad Winds is more than just another kitesurfing trip—it’s a lifestyle.
-                It’s designed for digital nomads and remote workers who want to combine work, adventure,
-                and community but welcomes also all the longterm travellers.
-                <br><br>
-                This is an opportunity to meet your tribe, push your limits, and create lifelong connections.
-            </div>
-        </section>
-
-        <section class="img-separator">
-            <img src="./images/horizontal_1.webp">
-        </section>
-
-        <section class="section-info">
-            <div class="info-content">
-                <div class="info-content__info">
-                    <h4 class="info-content__info__title">
-                        when?
-                    </h4>
-                    <div class="info-content__info__text">
-                        12th Oct - 9th Nov 2025 *
-                        <br>
-                        <del>26th Oct - 23rd Nov 2025</del> **
-                    </div>
-                    * only 1 room left
-                    <br>
-                    ** booked out!
-                </div>
-                <div class="info-content__info">
-                    <h4 class="info-content__info__title">
-                        where?
-                    </h4>
-                    <div class="info-content__info__text">
-                        3 Top Kite Spots:
-                        <br>
-                        Cumbuco, Macapá and Tatajuba
-                    </div>
-                </div>
-                <div class="info-content__info">
-                    <h4 class="info-content__info__title">
-                        cost?
-                    </h4>
-                    <div class="info-content__info__text">
-                        <b>2390€</b> in twin room
-                        <br>
-                        <b>3190€</b> in private room
-                    </div>
-                </div>
-            </div>
-            <a href="https://forms.zohopublic.com/technomad1/form/NomadWindsletsgetintouch/formperma/QHu-av-K4NOxag_wZ2CX3Y_y7di-mNwiS5E6VMwqm3g" target="_blank" class="btn"><span>get in touch</span></a>
-        </section>
-
-        <section class="section">
-            <h2 class="title">
-                so, where do we go?
-            </h2>
-            <div class="content">
-                <div class="content-section">
-                    <div class="content-section__img">
-                        <img src="./images/cumbuco.webp">
-                    </div>
-                    <div class="content-section__text">
-                        <h3 class="subtitle">
-                            Cumbuco
-                            <div class="subtitle__caption">
-                                time: 1 week
-                            </div>
-                        </h3>
-                        <div>
-                            One of the oldest and most famous spots, where most kitesurfers start their Brazilian adventure, and so are we.
-                            Location close to the airport will allow some flexibility with arrival times.
-                            Social vibe and lots of events will allow us to dive deep into Brazilian lifestyle straight from the beginning.
-                            <br><br>
-                            In Cumbuco, you can experience it all: flat-water lagoons just a short downwind or drive away,
-                            choppy ocean conditions, and waves.
-                            <br><br>
-                            Day trip
-                            <ul class="daytrip">
-                                <li>
-                                    Taiba - a spot that has become famous in the world of kitesurfing. A spot where you’ll be kiting alongside some of the best freestyle kitesurfers in the world.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-section">
-                    <div class="content-section__img">
-                        <img src="./images/macapa.webp">
-                    </div>
-                    <div class="content-section__text">
-                        <h3 class="subtitle">
-                            Praia de Macapa
-                            <div class="subtitle__caption">
-                                time: 2 weeks
-                            </div>
-                        </h3>
-                        <div>
-                            Tiny town, where it's more likely to meet donkeys than humans.
-                            Very remote but also breathtaking with beauty. Bring your drone for the epic footage.
-                            <br><br>
-                            It features multiple flat-water lagoons nestled among mangroves at high tide,
-                            flat river mouth at low tide and small waves on the ocean side.
-                            It’s a perfect playground for progress and one of our favourite spots.
-                            <br><br>
-                            Day trip
-                            <ul class="daytrip">
-                                <li>
-                                    trip to Parnaiba - boat trip to discover the mangrove forest, dunes, kite alone in the river and eat fresh crabs straight from the river. That's an experience.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-section">
-                    <div class="content-section__img">
-                        <img src="./images/tatajuba.webp">
-                    </div>
-                    <div class="content-section__text">
-                        <h3 class="subtitle">
-                            Tatajuba
-                            <div class="subtitle__caption">
-                                time: 1 week
-                            </div>
-                        </h3>
-                        <div>
-                            Probably the most iconic big-air spot in Brazil, Tatajuba is also the windiest location on the coast.
-                            It offers a mix of butter-flat lagoons right in front of the house and some of the best right-side kickers
-                            in the world in the open ocean. A short drive or downwinder away from other legendary spots,
-                            it’s a true kitesurfing paradise.
-                            <br><br>
-                            This small town, nestled in the sand dunes, has no paved roads and is hard to access—but that’s part of its charm.
-                            The small but strong community creates a unique atmosphere, and there’s always something going on.
-                            <br><br>
-                            Day trip
-                            <ul class="daytrip">
-                                <li>
-                                    Downwind Prea-Tatajuba - imagine strong wind, a mixture of flat areas and waves, stunning remote landscape and only you and your friends on the water cruising through
-                                </li>
-                                <li>
-                                    Night in Jericoacoara - the ultimate Brazilian party destination surrounded by sand dunes
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="text-teal-deep/90 space-y-4">
+                    <p>It’s a perfect balance between communal activities and personal time,
+                    allowing for a slow-paced exploration of Brazil’s breathtaking coastline—home to some
+                    of the best kitesurfing conditions in the world.</p>
+                    <p>With steady winds blowing from morning to sunset at 20–35 knots and warm waters above 26°C,
+                    the conditions are ideal for all levels. Along the way, we’ll experience a mix of open ocean and flat-water lagoons,
+                    remote hideaways, and vibrant social hubs. Over four weeks, we’ll stay in three different locations, explore many more,
+                    and conclude our adventure in the legendary town of Jericoacoara.</p>
+                    <p>Nomad Winds is more than just another kitesurfing trip—it’s a lifestyle.
+                    It’s designed for digital nomads and remote workers who want to combine work, adventure,
+                    and community but welcomes also all the longterm travellers.</p>
+                    <p>This is an opportunity to meet your tribe, push your limits, and create lifelong connections.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section-info">
-            <div class="info-content included">
-                <div class="info-content__info">
-                    <h4 class="info-content__info__title">
-                        included
-                    </h4>
-                    <div class="info-content__info__text">
-                        <ul>
-                            <li>
-                                4 weeks of co-working with a community of kitesurfing nomads – reliable internet provided
-                            </li>
-                            <li>
-                                Kitesurfing in perfect wind every day - all levels welcome
-                            </li>
-                            <li>
-                                Accommodation in 3 top brazilian kitespots
-                            </li>
-                            <li>
-                                Transportation between the spots
-                            </li>
-                            <li>
-                                Downwinder or day trip every weekend to discover more spots - over 10 in total!
-                            </li>
-                            <li>
-                                Weekly community dinner
-                            </li>
-                            <li>
-                                Community-driven events and workshops
-                            </li>
-                            <li>
-                                Loads of fun and new friends to share the adventure!
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="info-content__info">
-                    <h4 class="info-content__info__title">
-                        not included
-                    </h4>
-                    <div class="info-content__info__text">
-                        <ul>
-                            <li>
-                                Flight to/from Brazil (Fortaleza Airport)
-                            </li>
-                            <li>
-                                Airport transfers
-                            </li>
-                            <li>
-                                Travel insurance (compulsory)
-                            </li>
-                            <li>
-                                Equipment rental
-                            </li>
-                            <li>
-                                Kite lessons
-                            </li>
-                            <li>
-                                Food and beverages (except for community dinners)
-                            </li>
-                            <li>
-                                Additional day trips beyond the included four
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- Separator + trip facts -->
+        <div class="relative">
+            <div class="w-full h-[280px] sm:h-[400px] lg:h-[440px] overflow-hidden">
+                <img src="./images/horizontal_1.webp" alt="Brazil coastline" class="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.02]">
             </div>
-            <a href="https://forms.zohopublic.com/technomad1/form/NomadWindsletsgetintouch/formperma/QHu-av-K4NOxag_wZ2CX3Y_y7di-mNwiS5E6VMwqm3g" target="_blank" class="btn"><span>get in touch</span></a>
-        </section>
 
-        <section class="section mt-32">
-            <h2 class="title">
-                practical info
-            </h2>
-            <div class="content">
-                <div class="content-section">
-
-                    <div class="content-section__img content-section__img--gallery">
-                        <div class="glide">
-                            <div class="glide__track" data-glide-el="track">
-                                <ul class="glide__slides">
-                                    <li class="glide__slide">
-                                        <img src="./images/accomodation1.webp">
-                                    </li>
-                                    <li class="glide__slide">
-                                        <img src="./images/accomodation2.webp">
-                                    </li>
-                                    <li class="glide__slide">
-                                        <img src="./images/accomodation3.webp">
-                                    </li>
-                                    <li class="glide__slide">
-                                        <img src="./images/accomodation4.webp">
-                                    </li>
-                                    <li class="glide__slide">
-                                        <img src="./images/accomodation5.webp">
-                                    </li>
-                                    <li class="glide__slide">
-                                        <img src="./images/accomodation6.webp">
-                                    </li>
-                                </ul>
+            <section class="relative z-10 -mt-10 sm:-mt-14 px-4 sm:px-6 pb-8">
+                <div class="max-w-5xl mx-auto rounded-2xl bg-teal-deep text-mist shadow-soft overflow-hidden ring-1 ring-teal-deep/20">
+                    <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-mist/20">
+                        <div class="px-6 py-10 sm:py-12 text-center">
+                            <h4 class="font-bold text-3xl sm:text-4xl mb-4 text-mist/95 lowercase">when?</h4>
+                            <div class="text-lg sm:text-xl font-normal leading-relaxed">
+                                11th Oct - 8th Nov 2026
+                            </div>
+                            <!-- <p class="mt-4 text-sm sm:text-base opacity-80 leading-relaxed">
+                                * only 1 room left<br>
+                                ** booked out!
+                            </p> -->
+                        </div>
+                        <div class="px-6 py-10 sm:py-12 text-center">
+                            <h4 class="font-bold text-3xl sm:text-4xl mb-4 text-mist/95 lowercase">where?</h4>
+                            <div class="text-lg sm:text-xl font-normal leading-relaxed">
+                                3 Top Kite Spots:
+                                <br>
+                                Cumbuco, Macapá and Tatajuba
+                            </div>
+                        </div>
+                        <div class="px-6 py-10 sm:py-12 text-center">
+                            <h4 class="font-bold text-3xl sm:text-4xl mb-4 text-mist/95 lowercase">cost?</h4>
+                            <div class="text-lg sm:text-xl font-normal leading-relaxed">
+                                <strong class="font-semibold text-sand">2390€</strong> in twin room
+                                <br>
+                                <strong class="font-semibold text-sand">3190€</strong> in private room
                             </div>
                         </div>
                     </div>
-                    <div class="content-section__text">
-                        <h3 class="subtitle">
-                            Accommodation
-                        </h3>
-                        <div>
-                            In Cumbuco and Macapá, accommodation will be provided in carefully selected local houses with kitchens and common areas
-                            suitable for working, all located a convenient distance from the beach.
-                            In Tatajuba, due to limited options and the remote nature of the village,
-                            we will stay in a pousada that includes breakfast and common areas, but no kitchen.
-                            <br><br>
-                            All properties have been vetted for internet quality, and we’ll also have our own Starlink as a backup.
-                            Please note that power outages can occur in Brazil, though they are relatively rare.
-                            <br><br>
-                            The price includes accommodation in twin rooms. Private rooms are available for an additional cost of €800.
-                        </div>
-                    </div>
                 </div>
-                <div class="content-section">
-                    <div class="content-section__img content-section__img--gallery">
-                        <div class="glide">
-                            <div class="glide__track" data-glide-el="track">
-                                <ul class="glide__slides">
-                                    <li class="glide__slide">
-                                        <img src="./images/food1.webp">
-                                    </li>
-                                    <li class="glide__slide">
-                                        <img src="./images/food2.webp">
-                                    </li>
-                                    <li class="glide__slide">
-                                        <img src="./images/food3.webp">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-section__text">
-                        <h3 class="subtitle">
-                            Food
-                        </h3>
-                        <div>
-                            Once a week, we’ll gather to cook dinner together, make homemade caipirinhas, and hang out.
-                            All ingredients for those meals will be provided. Our communal dinners are a fantastic opportunity to
-                            get to know each other and connect.
-                            <br><br>
-                            Otherwise, food and drinks will be your expenses. Dinner prices range from 5€ at local eateries to 25€ at upscale,
-                            tourist-oriented restaurants, with options in between.
-                            For those on a budget, most of the accommodations include kitchen facilities so you can cook your own meals.
-                        </div>
-                    </div>
-                </div>
-                <div class="content-section">
-                    <div class="content-section__img content-section__img--gallery">
-                        <div class="glide">
-                            <div class="glide__track" data-glide-el="track">
-                                <ul class="glide__slides">
-                                    <li class="glide__slide">
-                                        <img src="./images/transport1.webp">
-                                    </li>
-                                    <li class="glide__slide">
-                                        <img src="./images/transport2.webp">
-                                    </li>
-                                    <li class="glide__slide">
-                                        <img src="./images/transport3.webp">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-section__text mb-0">
-                        <h3 class="subtitle">
-                            Transportation
-                        </h3>
-                        <div>
-                            At all times, we will have a car available for the group to run errands, do shopping, or go to the ATM.
-                            On transfer days, we will provide additional cars with drivers to transport everyone and all the equipment
-                            between the spots.
-                            <br><br>
-                            We will also share contacts for affordable taxis, buggies, and other services to help avoid 'gringo prices'
-                            when organizing additional trips or activities.
-                            <br><br>
-                            The airport transfers are not included but we can help you arrange the accredited transfer for Cumbuco (extra cost of 25€).
-                            Uber is an option but officially they are not allowed to transport quivers so many drivers decline. 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section mb-0">
-            <h2 class="title">
-                about
-            </h2>
-            <section class="img-separator">
-                <img src="./images/horizontal_2.webp">
-                <div class="img-separator__text subtitle">
-                    Nomad Winds was born from the desire to be surrounded with like-minded people even in remote locations,
-                    and to foster a sense of community in a lifestyle that can sometimes feel isolating.
-                    It delivers community-driven co-living and co-working expeditions.
+                <div class="flex justify-center mt-10">
+                    <a href="https://forms.zohopublic.com/technomad1/form/NomadWindsletsgetintouch/formperma/QHu-av-K4NOxag_wZ2CX3Y_y7di-mNwiS5E6VMwqm3g" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center justify-center rounded-full border-2 border-teal-deep bg-sand px-10 py-3.5 text-teal-deep font-bold text-xl sm:text-2xl shadow-soft transition duration-300 ease-out hover:scale-[1.03] hover:shadow-lg hover:bg-[#e8c078] active:scale-[0.98]">
+                        get in touch
+                    </a>
                 </div>
             </section>
+        </div>
+
+        <!-- Itinerary -->
+        <section class="py-12 sm:py-20 px-4 sm:px-6 lg:px-10">
+            <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl text-teal-deep mb-12 sm:mb-16 max-w-6xl mx-auto">
+                so, where do we go?
+            </h2>
+            <div class="max-w-6xl mx-auto space-y-16 sm:space-y-24">
+                <article class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                    <div class="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-soft ring-1 ring-teal-deep/10">
+                        <img src="./images/cumbuco.webp" alt="Cumbuco beach" class="w-full h-[280px] sm:h-[380px] lg:h-[450px] object-cover">
+                    </div>
+                    <div class="order-1 lg:order-2 lg:pl-4">
+                        <h3 class="text-coral font-bold text-2xl sm:text-3xl mb-1">
+                            Cumbuco
+                            <span class="block text-base sm:text-lg font-light text-coral/90 mt-1">time: 1 week</span>
+                        </h3>
+                        <div class="mt-4 text-teal-deep/90 space-y-4">
+                            <p>One of the oldest and most famous spots, where most kitesurfers start their Brazilian adventure, and so are we.
+                            Location close to the airport will allow some flexibility with arrival times.
+                            Social vibe and lots of events will allow us to dive deep into Brazilian lifestyle straight from the beginning.</p>
+                            <p>In Cumbuco, you can experience it all: flat-water lagoons just a short downwind or drive away,
+                            choppy ocean conditions, and waves.</p>
+                            <p class="font-medium text-teal-deep">Day trip</p>
+                            <ul class="daytrip list-disc pl-5 space-y-2 marker:text-coral">
+                                <li>Taiba - a spot that has become famous in the world of kitesurfing. A spot where you’ll be kiting alongside some of the best freestyle kitesurfers in the world.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                    <div class="rounded-2xl overflow-hidden shadow-soft ring-1 ring-teal-deep/10 lg:order-2">
+                        <img src="./images/macapa.webp" alt="Praia de Macapá" class="w-full h-[280px] sm:h-[380px] lg:h-[450px] object-cover">
+                    </div>
+                    <div class="lg:order-1 lg:pr-4">
+                        <h3 class="text-coral font-bold text-2xl sm:text-3xl mb-1">
+                            Praia de Macapa
+                            <span class="block text-base sm:text-lg font-light text-coral/90 mt-1">time: 2 weeks</span>
+                        </h3>
+                        <div class="mt-4 text-teal-deep/90 space-y-4">
+                            <p>Tiny town, where it's more likely to meet donkeys than humans.
+                            Very remote but also breathtaking with beauty. Bring your drone for the epic footage.</p>
+                            <p>It features multiple flat-water lagoons nestled among mangroves at high tide,
+                            flat river mouth at low tide and small waves on the ocean side.
+                            It’s a perfect playground for progress and one of our favourite spots.</p>
+                            <p class="font-medium text-teal-deep">Day trip</p>
+                            <ul class="daytrip list-disc pl-5 space-y-2 marker:text-coral">
+                                <li>trip to Parnaiba - boat trip to discover the mangrove forest, dunes, kite alone in the river and eat fresh crabs straight from the river. That's an experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                    <div class="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-soft ring-1 ring-teal-deep/10">
+                        <img src="./images/tatajuba.webp" alt="Tatajuba" class="w-full h-[280px] sm:h-[380px] lg:h-[450px] object-cover">
+                    </div>
+                    <div class="order-1 lg:order-2 lg:pl-4">
+                        <h3 class="text-coral font-bold text-2xl sm:text-3xl mb-1">
+                            Tatajuba
+                            <span class="block text-base sm:text-lg font-light text-coral/90 mt-1">time: 1 week</span>
+                        </h3>
+                        <div class="mt-4 text-teal-deep/90 space-y-4">
+                            <p>Probably the most iconic big-air spot in Brazil, Tatajuba is also the windiest location on the coast.
+                            It offers a mix of butter-flat lagoons right in front of the house and some of the best right-side kickers
+                            in the world in the open ocean. A short drive or downwinder away from other legendary spots,
+                            it’s a true kitesurfing paradise.</p>
+                            <p>This small town, nestled in the sand dunes, has no paved roads and is hard to access—but that’s part of its charm.
+                            The small but strong community creates a unique atmosphere, and there’s always something going on.</p>
+                            <p class="font-medium text-teal-deep">Day trip</p>
+                            <ul class="daytrip list-disc pl-5 space-y-2 marker:text-coral">
+                                <li>Downwind Prea-Tatajuba - imagine strong wind, a mixture of flat areas and waves, stunning remote landscape and only you and your friends on the water cruising through</li>
+                                <li>Night in Jericoacoara - the ultimate Brazilian party destination surrounded by sand dunes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
-        
-        <section class="section mt-0">
-            <div class="aboutus">
-                <div class="aboutus-section">
-                    <div class="aboutus-section__img">
-                        <img src="./images/aleks.webp">
+
+        <!-- Included / not included -->
+        <section class="px-4 sm:px-6 pb-16 pt-4">
+            <div class="max-w-5xl mx-auto rounded-2xl bg-teal-deep text-mist shadow-soft overflow-hidden ring-1 ring-teal-deep/20 mb-12">
+                <div class="grid md:grid-cols-2 gap-0 divide-y md:divide-y-0 md:divide-x divide-mist/20">
+                    <div class="p-8 sm:p-10 lg:p-12">
+                        <h4 class="font-bold text-3xl sm:text-4xl lowercase mb-6 text-center md:text-left">included</h4>
+                        <ul class="space-y-3 text-sm sm:text-base font-light leading-relaxed list-disc pl-5 marker:text-sand text-mist/95">
+                            <li>4 weeks of co-working with a community of kitesurfing nomads – reliable internet provided</li>
+                            <li>Kitesurfing in perfect wind every day - all levels welcome</li>
+                            <li>Accommodation in 3 top brazilian kitespots</li>
+                            <li>Transportation between the spots</li>
+                            <li>Downwinder or day trip every weekend to discover more spots - over 10 in total!</li>
+                            <li>Weekly community dinner</li>
+                            <li>Community-driven events and workshops</li>
+                            <li>Loads of fun and new friends to share the adventure!</li>
+                        </ul>
                     </div>
-                    <div class="aboutus-section__text">
-                        <span>
-                            Aleksandra launched Nomad Winds with a trip to Brazil in October 2024.
-                            An adventurer and digital nomad, she has been working remotely from windy places since 2021.
-                            Apart from chasing the wind and aiming for the next WOO PR (13,9 m), Aleksandra sometimes works as a designer,
-                            researcher and strategist.
-                        </span>
+                    <div class="p-8 sm:p-10 lg:p-12">
+                        <h4 class="font-bold text-3xl sm:text-4xl lowercase mb-6 text-center md:text-left">not included</h4>
+                        <ul class="space-y-3 text-sm sm:text-base font-light leading-relaxed list-disc pl-5 marker:text-coral/80 text-mist/90">
+                            <li>Flight to/from Brazil (Fortaleza Airport)</li>
+                            <li>Airport transfers</li>
+                            <li>Travel insurance (compulsory)</li>
+                            <li>Equipment rental</li>
+                            <li>Kite lessons</li>
+                            <li>Food and beverages (except for community dinners)</li>
+                            <li>Additional day trips beyond the included four</li>
+                        </ul>
                     </div>
-                    <div class="aboutus-section__img"></div>
                 </div>
-                <div class="aboutus-section">
-                    <div class="aboutus-section__img">
-                        <img src="./images/denis.webp">
+            </div>
+            <div class="flex justify-center">
+                <a href="https://forms.zohopublic.com/technomad1/form/NomadWindsletsgetintouch/formperma/QHu-av-K4NOxag_wZ2CX3Y_y7di-mNwiS5E6VMwqm3g" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center justify-center rounded-full border-2 border-teal-deep bg-sand px-10 py-3.5 text-teal-deep font-bold text-xl sm:text-2xl shadow-soft transition duration-300 ease-out hover:scale-[1.03] hover:shadow-lg hover:bg-[#e8c078] active:scale-[0.98]">
+                    get in touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Practical -->
+        <section id="practical" class="py-12 sm:py-20 px-4 sm:px-6 lg:px-10">
+            <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl text-teal-deep mb-12 sm:mb-16 max-w-6xl mx-auto">
+                practical info
+            </h2>
+            <div class="max-w-6xl mx-auto space-y-16 sm:space-y-20">
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+                    <div class="content-section__img--gallery rounded-2xl overflow-hidden shadow-soft ring-1 ring-teal-deep/10 min-h-[280px]">
+                        <div class="glide h-full">
+                            <div class="glide__track h-full" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide"><img src="./images/accomodation1.webp" alt="Accommodation"></li>
+                                    <li class="glide__slide"><img src="./images/accomodation2.webp" alt="Accommodation"></li>
+                                    <li class="glide__slide"><img src="./images/accomodation3.webp" alt="Accommodation"></li>
+                                    <li class="glide__slide"><img src="./images/accomodation4.webp" alt="Accommodation"></li>
+                                    <li class="glide__slide"><img src="./images/accomodation5.webp" alt="Accommodation"></li>
+                                    <li class="glide__slide"><img src="./images/accomodation6.webp" alt="Accommodation"></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="aboutus-section__text">
-                        <span>
-                            Denis, a remote software engineer born and raised in the French Alps,
-                            swapped his favorite pair of skis for a kite quiver at the end of 2021 in Cape Town.
-                            After surviving learning at one of the world’s most challenging spots, he solidified his passion for the sport.
-                        </span>
+                    <div class="flex flex-col justify-center lg:pl-4">
+                        <h3 class="text-coral font-bold text-2xl sm:text-3xl mb-4">Accommodation</h3>
+                        <div class="text-teal-deep/90 space-y-4">
+                            <p>In Cumbuco and Macapá, accommodation will be provided in carefully selected local houses with kitchens and common areas
+                            suitable for working, all located a convenient distance from the beach.
+                            In Tatajuba, due to limited options and the remote nature of the village,
+                            we will stay in a pousada that includes breakfast and common areas, but no kitchen.</p>
+                            <p>All properties have been vetted for internet quality, and we’ll also have our own Starlink as a backup.
+                            Please note that power outages can occur in Brazil, though they are relatively rare.</p>
+                            <p>The price includes accommodation in twin rooms. Private rooms are available for an additional cost of €800.</p>
+                        </div>
                     </div>
-                    <div class="aboutus-section__img"></div>
                 </div>
-                <div class="aboutus-section">
-                    <div class="aboutus-section__img">
-                        <img src="./images/us.webp">
+
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+                    <div class="content-section__img--gallery rounded-2xl overflow-hidden shadow-soft ring-1 ring-teal-deep/10 min-h-[280px] lg:order-2">
+                        <div class="glide h-full">
+                            <div class="glide__track h-full" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide"><img src="./images/food1.webp" alt="Food"></li>
+                                    <li class="glide__slide"><img src="./images/food2.webp" alt="Food"></li>
+                                    <li class="glide__slide"><img src="./images/food3.webp" alt="Food"></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="aboutus-section__text">
-                        <span>
-                            Aleksandra and Denis reconnected in Tarifa in 2024 and have been inseparable since,
-                            chasing the wind together across six countries on three continents.
-                            Now they are joining forces at Nomad Winds to explore new destinations and share it with others.
-                            They are both certified IKO instructors.
-                        </span>
+                    <div class="flex flex-col justify-center lg:pr-4 lg:order-1">
+                        <h3 class="text-coral font-bold text-2xl sm:text-3xl mb-4">Food</h3>
+                        <div class="text-teal-deep/90 space-y-4">
+                            <p>Once a week, we’ll gather to cook dinner together, make homemade caipirinhas, and hang out.
+                            All ingredients for those meals will be provided. Our communal dinners are a fantastic opportunity to
+                            get to know each other and connect.</p>
+                            <p>Otherwise, food and drinks will be your expenses. Dinner prices range from 5€ at local eateries to 25€ at upscale,
+                            tourist-oriented restaurants, with options in between.
+                            For those on a budget, most of the accommodations include kitchen facilities so you can cook your own meals.</p>
+                        </div>
                     </div>
-                    <div class="aboutus-section__img"></div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+                    <div class="content-section__img--gallery rounded-2xl overflow-hidden shadow-soft ring-1 ring-teal-deep/10 min-h-[280px]">
+                        <div class="glide h-full">
+                            <div class="glide__track h-full" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide"><img src="./images/transport1.webp" alt="Transportation"></li>
+                                    <li class="glide__slide"><img src="./images/transport2.webp" alt="Transportation"></li>
+                                    <li class="glide__slide"><img src="./images/transport3.webp" alt="Transportation"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center lg:pl-4">
+                        <h3 class="text-coral font-bold text-2xl sm:text-3xl mb-4">Transportation</h3>
+                        <div class="text-teal-deep/90 space-y-4">
+                            <p>At all times, we will have a car available for the group to run errands, do shopping, or go to the ATM.
+                            On transfer days, we will provide additional cars with drivers to transport everyone and all the equipment
+                            between the spots.</p>
+                            <p>We will also share contacts for affordable taxis, buggies, and other services to help avoid 'gringo prices'
+                            when organizing additional trips or activities.</p>
+                            <p>The airport transfers are not included but we can help you arrange the accredited transfer for Cumbuco (extra cost of 25€).
+                            Uber is an option but officially they are not allowed to transport quivers so many drivers decline.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <section class="section">
-            <h2 class="title">
+
+        <!-- About mission -->
+        <section class="mb-0">
+            <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl text-teal-deep px-4 sm:px-6 lg:px-10 max-w-6xl mx-auto mb-8 sm:mb-10">
+                about
+            </h2>
+            <div class="relative w-full min-h-[320px] sm:min-h-[420px] lg:min-h-[520px]">
+                <img src="./images/horizontal_2.webp" alt="Nomad Winds in Brazil" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-teal-deep/80 via-teal-deep/20 to-transparent"></div>
+                <div class="relative z-10 flex items-end sm:items-center justify-center min-h-[320px] sm:min-h-[420px] lg:min-h-[520px] px-4 py-12 sm:py-16">
+                    <p class="max-w-xl sm:max-w-2xl rounded-2xl bg-sage/85 backdrop-blur-md px-6 py-6 sm:px-8 sm:py-8 text-coral font-bold text-lg sm:text-2xl leading-snug text-center shadow-soft ring-1 ring-teal-deep/10">
+                        Nomad Winds was born from the desire to be surrounded with like-minded people even in remote locations,
+                        and to foster a sense of community in a lifestyle that can sometimes feel isolating.
+                        It delivers community-driven co-living and co-working expeditions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="py-16 sm:py-24 px-4 sm:px-6">
+            <div class="max-w-3xl mx-auto space-y-14 sm:space-y-20">
+                <div class="flex flex-col sm:flex-row items-center gap-8 text-center sm:text-left">
+                    <img src="./images/aleks.webp" alt="Aleksandra" class="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-soft ring-4 ring-white shrink-0">
+                    <p class="text-teal-deep/90 leading-relaxed">
+                        Aleksandra launched Nomad Winds with a trip to Brazil in October 2024.
+                        An adventurer and digital nomad, she has been working remotely from windy places since 2021.
+                        Apart from chasing the wind and aiming for the next WOO PR (13,9 m), Aleksandra sometimes works as a designer,
+                        researcher and strategist.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row-reverse items-center gap-8 text-center sm:text-left">
+                    <img src="./images/denis.webp" alt="Denis" class="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-soft ring-4 ring-white shrink-0">
+                    <p class="text-teal-deep/90 leading-relaxed">
+                        Denis, a remote software engineer born and raised in the French Alps,
+                        swapped his favorite pair of skis for a kite quiver at the end of 2021 in Cape Town.
+                        After surviving learning at one of the world’s most challenging spots, he solidified his passion for the sport.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-8 text-center sm:text-left">
+                    <img src="./images/us.webp" alt="Aleksandra and Denis" class="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-soft ring-4 ring-white shrink-0">
+                    <p class="text-teal-deep/90 leading-relaxed">
+                        Aleksandra and Denis reconnected in Tarifa in 2024 and have been inseparable since,
+                        chasing the wind together across six countries on three continents.
+                        Now they are joining forces at Nomad Winds to explore new destinations and share it with others.
+                        They are both certified IKO instructors.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="py-12 sm:py-20 px-0 sm:px-4 overflow-hidden">
+            <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl text-teal-deep mb-10 sm:mb-14 px-4 sm:px-6 lg:px-10 max-w-6xl mx-auto">
                 memories from last trip
             </h2>
-            <div class="glide gallery">
+            <div class="glide gallery px-2 sm:px-4">
                 <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                    </ul>
+                    <ul class="glide__slides"></ul>
                 </div>
             </div>
         </section>
 
-        <footer>
-            <a href="https://forms.zohopublic.com/technomad1/form/NomadWindsletsgetintouch/formperma/QHu-av-K4NOxag_wZ2CX3Y_y7di-mNwiS5E6VMwqm3g" target="_blank" class="btn"><span>get in touch</span></a>
-
-            <a href="https://www.instagram.com/nomad_winds" target="_blank" class="instagram-link">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 24px; height: 24px;">
+        <footer class="bg-teal-deep text-mist py-16 sm:py-20 px-6 flex flex-col items-center gap-10">
+            <a href="https://forms.zohopublic.com/technomad1/form/NomadWindsletsgetintouch/formperma/QHu-av-K4NOxag_wZ2CX3Y_y7di-mNwiS5E6VMwqm3g" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border-2 border-mist/40 bg-sand px-10 py-3.5 text-teal-deep font-bold text-xl sm:text-2xl transition duration-300 ease-out hover:scale-[1.03] hover:border-mist hover:shadow-lg">
+                get in touch
+            </a>
+            <a href="https://www.instagram.com/nomad_winds" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 text-mist/90 hover:text-sand transition-colors text-lg font-normal">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="" width="24" height="24" class="opacity-90">
                 @nomad_winds
             </a>
         </footer>

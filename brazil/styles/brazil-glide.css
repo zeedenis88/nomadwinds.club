@@ -1,0 +1,38 @@
+/* Glide + lightbox layout — kept out of Tailwind for reliable carousel math */
+.glide {
+  width: 100%;
+  max-width: 100%;
+}
+
+.glide__slide {
+  overflow: hidden;
+}
+
+.glide__slides {
+  height: 450px;
+}
+
+.glide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.glide.gallery .glide__slides {
+  height: 420px;
+}
+
+.glide.gallery .glide__slide {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .glide__slides {
+    height: 300px;
+  }
+
+  .glide.gallery .glide__slides {
+    height: 260px;
+  }
+}
